@@ -11,7 +11,7 @@ Limitations
 ===========
 
 * This release will skip methods and classes with generic types.
-* There is always the chance that not all dependent dll's will be found. If this happens try copying your compiled dll into the same direvtory as the dll you want information about.
+* There is always the chance that not all dependent dll's will be found. If this happens try copying your compiled dll into the same directory as the dll you want information about.
 
 
 Acknowledgements
