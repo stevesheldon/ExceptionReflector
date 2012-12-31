@@ -1,5 +1,5 @@
-ExceptionReflector
-==================
+C# Method Exception Reflector
+=============================
 
 This is a simple tool for checking which exceptions are thrown by a method in c#. To use, the user clicks the link 
 in the top left of the application to select an assembly/dll. After loading, methods are showin in a tree grouped by
