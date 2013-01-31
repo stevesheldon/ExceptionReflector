@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 using ExceptionReflector.Properties;
 
 namespace ExceptionReflector
@@ -108,7 +109,7 @@ namespace ExceptionReflector
             this.exceptionList.Items.Clear();
 
             var exceptions = method.GetAllExceptions();
-            foreach (var exception in exceptions)
+            foreach (var exception in new List<Type>(exceptions).OrderBy(o=>o.FullName))
             {
                 exceptionList.Items.Add(exception.FullName);
             }
